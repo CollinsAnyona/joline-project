@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joline Geoconsultants Ltd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="logo" href="#hero">JOLINE <span>GEOCONSULTANTS</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#coverage">Coverage</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a class="nav-cta" href="#contact">Request consultation</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-drawer" id="nav-drawer">
+    <a href="#services">Services</a>
+    <a href="#coverage">Coverage</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <a class="btn-primary" href="#contact">Request consultation</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-noise" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-split">
+      <div class="hero-text">
+        <div class="eyebrow reveal">Geoscience &amp; environmental consulting — east &amp; central Africa</div>
+        <h1 class="reveal" style="--d:.12s">We map what's<br><em>beneath,</em><br>so you build<br>what lasts.</h1>
+        <p class="reveal" style="--d:.24s">Groundwater investigations, ERT geophysical surveys, and NEMA-compliant environmental assessments for infrastructure, energy and development projects across the region.</p>
+        <div class="hero-cta-row reveal" style="--d:.36s">
+          <a class="btn-primary" href="#contact">Request a consultation</a>
+          <a class="btn-ghost" href="#services">View our services</a>
+        </div>
+      </div>
+      <div class="hero-panel reveal" style="--d:.2s">
+        <div class="panel-header">
+          <span class="panel-title">Field Instrument — Active Log</span>
+          <span class="panel-live"><span class="panel-pulse"></span>LIVE</span>
+        </div>
+        <div class="panel-depth-counter">
+          <span class="panel-counter" data-target="85">0</span><span class="panel-unit">m</span>
+          <div class="panel-depth-sub">Total depth logged</div>
+        </div>
+        <div class="panel-bar-wrap">
+          <div class="panel-bar"><div class="panel-bar-fill"></div></div>
+          <div class="panel-bar-labels">
+            <span>0m</span><span>Surface</span><span>85m</span>
+          </div>
+        </div>
+        <div class="panel-highlights">
+          <div class="panel-highlight">
+            <div class="panel-highlight-val panel-green">62m</div>
+            <div class="panel-highlight-lbl">Aquifer hit</div>
+          </div>
+          <div class="panel-highlight">
+            <div class="panel-highlight-val panel-green">4.8 m³/hr</div>
+            <div class="panel-highlight-lbl">Yield</div>
+          </div>
+        </div>
+        <div class="panel-rows">
+          <div class="panel-row"><span>Site</span><span>Turkana Basin, KE</span></div>
+          <div class="panel-row"><span>Method</span><span>ERT-VES</span></div>
+          <div class="panel-row"><span>Ref</span><span>BH-2026-114</span></div>
+          <div class="panel-row"><span>Compliance</span><span>NEMA certified</span></div>
+        </div>
+        <div class="panel-footer">
+          <div class="panel-signal">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <span>Signal quality: Excellent</span>
+        </div>
+      </div>
+    </div>
+    <div class="coord reveal" style="--d:.5s">
+      <div class="coord-item"><strong>Site Ref</strong><span id="coord-ref">BH-2026-114</span></div>
+      <div class="coord-item"><strong>Depth Logged</strong><span>0–85m</span></div>
+      <div class="coord-item"><strong>Method</strong><span>ERT-VES</span></div>
+      <div class="coord-item"><strong>Status</strong><span class="coord-live">● Active</span></div>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#trust" aria-label="Scroll down">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-mouse"></span>
+  </a>
+</section>
+
+<div class="trust" id="trust">
+  <div class="wrap">
+    <div class="trust-item">
+      <div class="trust-icon">&#9670;</div>
+      <div class="num" data-target="7" data-suffix="">0</div>
+      <div class="lbl">Countries served</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">&#9632;</div>
+      <div class="num">NEMA</div>
+      <div class="lbl">Licensed lead expert</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">&#9650;</div>
+      <div class="num" data-target="100" data-suffix="+">0</div>
+      <div class="lbl">Boreholes &amp; ERT surveys</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="trust-icon">&#9679;</div>
+      <div class="num">Full-cycle</div>
+      <div class="lbl">EIA / ESIA delivery</div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Core specializations</div>
+      <h2>Every engagement starts below the surface</h2>
+      <p>From initial siting through to regulatory sign-off — we cover the full project lifecycle.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card sr">
+        <div class="svc-card-inner">
+          <div class="svc-num">01</div>
+          <div class="svc-photo" style="--photo:url('Img/detecting machines for check the water site.jpeg')"></div>
+          <div class="svc-content">
+            <div class="svc-tag">Hydrogeology</div>
+            <h3>Groundwater &amp; geotechnical investigations</h3>
+            <p>Subsurface mapping and soil analysis for sustainable water access and safe infrastructure design.</p>
+            <ul class="svc-list">
+              <li>Hydrogeological mapping &amp; aquifer characterisation</li>
+              <li>Soil bearing capacity &amp; permeability testing</li>
+              <li>Water quality sampling &amp; laboratory analysis</li>
+              <li>Borehole yield testing &amp; pump selection</li>
+            </ul>
+          </div>
+          <a class="svc-link" href="#contact">Enquire <span>&#8594;</span></a>
+        </div>
+      </div>
+
+      <div class="svc-card sr">
+        <div class="svc-card-inner">
+          <div class="svc-num">02</div>
+          <div class="svc-photo" style="--photo:url('Img/machine for checking the water site.jpeg')"></div>
+          <div class="svc-content">
+            <div class="svc-tag">Geophysics</div>
+            <h3>Geophysical surveys (ERT) &amp; borehole siting</h3>
+            <p>High-resolution subsurface imaging to identify optimal drill points before a rig ever mobilises.</p>
+            <ul class="svc-list">
+              <li>2D &amp; 3D ERT profiling</li>
+              <li>Vertical electrical sounding (VES)</li>
+              <li>Seismic refraction surveys</li>
+              <li>Precision borehole siting reports</li>
+            </ul>
+          </div>
+          <a class="svc-link" href="#contact">Enquire <span>&#8594;</span></a>
+        </div>
+      </div>
+
+      <div class="svc-card sr">
+        <div class="svc-card-inner">
+          <div class="svc-num">03</div>
+          <div class="svc-photo" style="--photo:url('Img/men in reflectors at work.jpeg')"></div>
+          <div class="svc-content">
+            <div class="svc-tag">Environment</div>
+            <h3>Environmental impact assessment (EIA / ESIA)</h3>
+            <p>Full-cycle, NEMA-compliant assessments from screening through to licensing support.</p>
+            <ul class="svc-list">
+              <li>Project screening &amp; scoping</li>
+              <li>Full ESIA studies &amp; public participation</li>
+              <li>Environmental management plans (EMP)</li>
+              <li>NEMA licensing &amp; regulatory liaison</li>
+            </ul>
+          </div>
+          <a class="svc-link" href="#contact">Enquire <span>&#8594;</span></a>
+        </div>
+      </div>
+
+      <div class="svc-card sr">
+        <div class="svc-card-inner">
+          <div class="svc-num">04</div>
+          <div class="svc-photo" style="--photo:url('Img/batteries and machine.jpeg')"></div>
+          <div class="svc-content">
+            <div class="svc-tag">Compliance</div>
+            <h3>Air pollution &amp; environmental audits</h3>
+            <p>Annual monitoring and advisory work that keeps operators ahead of environmental law.</p>
+            <ul class="svc-list">
+              <li>Ambient air quality monitoring</li>
+              <li>Noise &amp; vibration assessments</li>
+              <li>Annual environmental audit reports</li>
+              <li>Regulatory compliance advisory</li>
+            </ul>
+          </div>
+          <a class="svc-link" href="#contact">Enquire <span>&#8594;</span></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="region" id="coverage">
+  <div class="region-inner">
+    <div class="region-left">
+      <div class="sr">
+        <div class="section-eyebrow">Field of operation</div>
+        <div class="region-bignum">8</div>
+        <h2>Countries.<br>One standard<br>of ground truth.</h2>
+        <p>Our teams deploy directly — not desk-based assessments sent remotely from a head office.</p>
+      </div>
+      <div class="country-list">
+        <div class="country country-hq sr">
+          <div class="country-ping"></div>
+          <span class="country-name">Kenya</span>
+          <span class="country-badge">HQ</span>
+        </div>
+        <div class="country sr"><span class="country-name">Uganda</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">Tanzania</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">Rwanda</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">South Sudan</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">Somalia</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">Somaliland</span><span class="country-status">&#9679; Active</span></div>
+        <div class="country sr"><span class="country-name">Djibouti</span><span class="country-status">&#9679; Active</span></div>
+      </div>
+    </div>
+    <div class="region-right sr">
+      <div class="map-wrap">
+        <img src="Img/joline-regional-coverage-map.png" alt="Joline Geoconsultants regional coverage map" class="region-map-img">
+      </div>
+      <div class="region-note">
+        <span>&#8220;Ground teams deployed — not desk-based assessments.&#8221;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head sr">
+      <div class="section-eyebrow">Who you'll work with</div>
+      <h2>A small team,<br>directly on your project</h2>
+      <p>No account managers. The specialists you brief are the ones in the field.</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card sr">
+        <div class="team-card-top">
+          <span class="team-num">01</span>
+          <div class="team-discipline">Hydrogeology</div>
+        </div>
+        <div class="team-rule"></div>
+        <h3>John Ochieng</h3>
+        <div class="team-role">Consulting Geoscientist</div>
+        <p>7+ years leading groundwater investigations and ERT surveys across East Africa.</p>
+        <ul class="team-creds">
+          <li><span>Experience</span>7+ years</li>
+          <li><span>Speciality</span>ERT &amp; VES surveys</li>
+          <li><span>Region</span>East Africa</li>
+        </ul>
+      </div>
+
+      <div class="team-card sr">
+        <div class="team-card-top">
+          <span class="team-num">02</span>
+          <div class="team-discipline">Environment</div>
+          <span class="team-badge">NEMA Licensed</span>
+        </div>
+        <div class="team-rule"></div>
+        <h3>Linet Tengo</h3>
+        <div class="team-role">Head of Environmental Department</div>
+        <p>Leads full-cycle EIA and ESIA delivery for renewable energy and infrastructure clients.</p>
+        <ul class="team-creds">
+          <li><span>Licence</span>NEMA Lead Expert</li>
+          <li><span>Speciality</span>EIA / ESIA</li>
+          <li><span>Region</span>Kenya &amp; region</li>
+        </ul>
+      </div>
+
+      <div class="team-card sr">
+        <div class="team-card-top">
+          <span class="team-num">03</span>
+          <div class="team-discipline">Field Operations</div>
+        </div>
+        <div class="team-rule"></div>
+        <h3>Victor Odhiambo</h3>
+        <div class="team-role">Head of Plumbing Works</div>
+        <p>Hands-on installation and maintenance across water infrastructure projects in the field.</p>
+        <ul class="team-creds">
+          <li><span>Focus</span>Water infrastructure</li>
+          <li><span>Speciality</span>Plumbing &amp; networks</li>
+          <li><span>Deployment</span>Field-based</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="clients-inner sr">
+    <div class="section-eyebrow">Trusted by</div>
+    <div class="client-row">
+      <div class="client-card"><img src="Img/Clients/eightyEight.jpeg" alt="88"></div>
+      <div class="client-card"><img src="Img/Clients/LordshipAfrica.jpeg" alt="Lordship Africa"></div>
+      <div class="client-card"><img src="Img/Clients/OilCom.jpeg" alt="OilCom"></div>
+      <div class="client-card"><img src="Img/Clients/StruconLtd.jpeg" alt="Strucon Ltd"></div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-top">
+    <div class="wrap">
+      <div class="footer-top-inner">
+        <div class="footer-top-left">
+          <div class="section-eyebrow" style="color:#C9A96E">Start a project</div>
+          <h2>Tell us what's<br>beneath your site.<br><em>We'll find out.</em></h2>
+        </div>
+        <div class="footer-top-right">
+          <p>Whether you need a borehole sited, an EIA filed, or a full geophysical survey — we scope it fast and deploy directly.</p>
+          <div class="footer-cta-row">
+            <a class="btn-primary" href="mailto:info@jolinegeoconsultants.org">Email the team</a>
+            <a class="btn-ghost" href="https://wa.me/254703128322">WhatsApp us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-band">
+    <div class="wrap">
+      <div class="footer-band-inner">
+        <div class="footer-contact-block">
+          <div class="footer-label">Direct contact</div>
+          <a href="mailto:info@jolinegeoconsultants.org">info@jolinegeoconsultants.org</a>
+          <a href="tel:+254703128322">+254 703 128 322</a>
+        </div>
+        <div class="footer-contact-block">
+          <div class="footer-label">Follow</div>
+          <a href="https://www.facebook.com/share/1AcZG8SKpR/">Facebook</a>
+          <a href="https://www.linkedin.com/in/joline-geo-consultants-ltd-47553b275">LinkedIn</a>
+        </div>
+        <div class="footer-contact-block">
+          <div class="footer-label">Headquarters</div>
+          <span>Nairobi, Kenya</span>
+          <span>East &amp; Central Africa</span>
+        </div>
+        <div class="footer-contact-block">
+          <div class="footer-label">Licence</div>
+          <span>NEMA Lead Expert</span>
+          <span>Licensed &amp; insured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">
+      <div class="bottom-row">
+        <span class="logo-text">JOLINE <span>GEOCONSULTANTS</span> LTD</span>
+        <span>&copy; 2026 &mdash; All rights reserved</span>
+        <span class="footer-coords">&#9670; 1.2921&deg; S, 36.8219&deg; E &mdash; Nairobi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
