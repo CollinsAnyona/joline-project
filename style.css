@@ -934,9 +934,21 @@ nav.scrolled .hamburger span{background:var(--ink);}
   transition:transform 0.35s cubic-bezier(.22,1,.36,1);
 }
 .client-card:hover img{transform:scale(1.06);}
+
+/* Logos with a solid brand-colour background: render as a plain chip
+   instead of multiply-blending (which would smear the fill colour). */
+.client-card--chip img{
+  mix-blend-mode:normal;
+  height:40px;
+  padding:4px 10px;
+  background:#fff;
+  border-radius:6px;
+  box-shadow:0 0 0 1px rgba(22,104,180,0.12);
+}
 @media(max-width:600px){
   .client-card{min-width:calc(50% - 1px);border-bottom:1px solid rgba(22,104,180,0.18);}
   .client-row img{height:36px;}
+  .client-card--chip img{height:30px;}
 }
 
 /* FOOTER */
