@@ -131,15 +131,37 @@ nav.scrolled .hamburger span{background:var(--ink);}
 }
 .hero-bg{
   position:absolute;inset:0;z-index:0;
-  background:url('Img/backside of man and woman in company reflectors.jpeg') center/cover no-repeat;
-  transform:scale(1.1) translateY(calc(var(--px,0px) * 0.22));
+  transform:translateY(calc(var(--px,0px) * 0.22));
   will-change:transform;
 }
+.hero-bg-layer{
+  position:absolute;inset:0;
+  background-position:center;background-size:cover;background-repeat:no-repeat;
+  opacity:0;
+  animation:heroBgCycle 24s infinite;
+}
+.hero-bg-layer:nth-child(1){animation-delay:0s;}
+.hero-bg-layer:nth-child(2){animation-delay:6s;}
+.hero-bg-layer:nth-child(3){animation-delay:12s;}
+.hero-bg-layer:nth-child(4){animation-delay:18s;}
+@keyframes heroBgCycle{
+  0%{opacity:0;transform:translateX(-8%) scale(1.2);}
+  8%{opacity:1;}
+  25%{transform:translateX(0%) scale(1.2);}
+  42%{opacity:1;}
+  50%{opacity:0;transform:translateX(8%) scale(1.2);}
+  50.01%{transform:translateX(-8%) scale(1.2);}
+  100%{opacity:0;transform:translateX(-8%) scale(1.2);}
+}
 .hero-bg::after{
-  content:'';position:absolute;inset:0;
+  content:'';position:absolute;inset:0;z-index:1;
   background:
     radial-gradient(ellipse at 30% 50%, rgba(15,43,76,0.45) 0%, transparent 70%),
     linear-gradient(105deg, rgba(15,43,76,0.97) 0%, rgba(15,43,76,0.75) 48%, rgba(15,43,76,0.55) 100%);
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-bg-layer{animation:none;opacity:0;}
+  .hero-bg-layer:nth-child(1){opacity:1;}
 }
 .hero-noise{
   position:absolute;inset:0;z-index:2;pointer-events:none;

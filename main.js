@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
   const px = window.scrollY;
 
   // Parallax photo bg
-  if (heroBg) heroBg.style.transform = `scale(1.1) translateY(${px * 0.22}px)`;
+  if (heroBg) heroBg.style.transform = `translateY(${px * 0.22}px)`;
 
   // Nav state
   nav.classList.toggle('scrolled', px > 60);
